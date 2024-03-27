@@ -11,14 +11,18 @@ import React, { useState } from "react";
 const HomePage = () => {
   const [showNav, setShowNav] = useState(false);
 
-  const closeNav = () => setShowNav(false);
-  const openNav = () => setShowNav(true);
+  const handleShowNav = () => {
+    setShowNav(!showNav);
+  };
 
   return (
-    <div className="">
+    <div className="" id="header">
       <div>
-        {showNav && <MiniMenuNavbar navState={showNav} closeNav={closeNav} />}
-        <NavBar openNav={openNav} />
+        {showNav && (
+          <MiniMenuNavbar navState={showNav} closeNav={handleShowNav} />
+        )}
+
+        <NavBar openNav={handleShowNav} />
         <Hero />
 
         <div className="relative z-[30]">

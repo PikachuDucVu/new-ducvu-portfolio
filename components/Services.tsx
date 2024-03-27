@@ -6,9 +6,9 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="bg-[#121212] pt-16 md:pt-32 pb-20">
+    <div className="bg-[#121212] pt-16 md:pt-32 pb-20" id="services">
       <p className="heading">
-        My <span className="text-yellow-400">Services</span>
+        <span className="text-yellow-400">SKILLS</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 mx-auto items-center gap-14 mt-16 text-white">
         <div>
