@@ -6,14 +6,30 @@ import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const HomePage = () => {
   const [showNav, setShowNav] = useState(false);
+  const router = useRouter();
 
   const handleShowNav = () => {
     setShowNav(!showNav);
   };
+  const HomeScreenContent = () => (
+    <div>
+      <NavBar openNav={handleShowNav} />
+      <Hero />
+
+      <div className="relative z-[30]">
+        <About />
+        <Services />
+        <Skills />
+        <Projects />
+        <Footer />
+      </div>
+    </div>
+  );
 
   return (
     <div className="" id="header">
@@ -21,17 +37,9 @@ const HomePage = () => {
         {showNav && (
           <MiniMenuNavbar navState={showNav} closeNav={handleShowNav} />
         )}
-
-        <NavBar openNav={handleShowNav} />
-        <Hero />
-
-        <div className="relative z-[30]">
-          <About />
-          <Services />
-          <Skills />
-          <Projects />
-          <Footer />
-        </div>
+        {router.pathname === "/" && <HomeScreenContent />}
+        {/* TODO: Add CV page */}
+        {/* {router.pathname === "/cv" && <CVPage />} */}
       </div>
     </div>
   );

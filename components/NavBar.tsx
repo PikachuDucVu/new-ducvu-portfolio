@@ -34,9 +34,15 @@ const NavBar = ({ openNav }: { openNav: () => void }) => {
             onClick={openNav}
           />
         </div>
-        <div className="hidden lg:flex uppercase px-10 border-2 hover:bg-green-700 text-white font-bold transitionb text-lg">
-          Login | Register
-        </div>
+
+        <Link
+          to={"projects"}
+          className="hidden lg:flex uppercase px-10 border-2 hover:bg-slate-700 hover:scale-125 text-white font-bold transition text-lg cursor-pointer"
+          smooth
+          duration={500}
+        >
+          DEMO
+        </Link>
       </div>
     </div>
   );
