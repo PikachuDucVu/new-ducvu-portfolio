@@ -13,6 +13,10 @@ module.exports = {
       fontFamily: {
         primary: ["Poppins"],
       },
+      backgroundImage: {
+        "instagram-gradient":
+          "linear-gradient(135deg, #833AB4, #C13584, #E1306C, #FD1D1D, #FCAF45)",
+      },
     },
   },
   plugins: [],

@@ -19,9 +19,6 @@ const SkillsItem = ({
       </h1>
       <p className="text-[#aaaaaa] font-normal w-4/5 text-[17px] opacity-80">
         {decription}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint,
-        vero magni nemo veniam assumenda expedita ducimus. Consequatur cumque
-        hic, molestias nam delectus quaerat possimus?
       </p>
     </div>
   );

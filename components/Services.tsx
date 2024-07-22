@@ -16,8 +16,9 @@ const Services = () => {
             <RocketLaunchIcon className="w-24 h-24 mx-auto text-[#d3fae8]" />
             <h1 className="text-xl md:text-3xl mt-6 mb-6">Frontend</h1>
             <p className="text-[15px] text-[#d3d2d2] font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              sint, vero magni nemo veniam assumenda expedita ducimus.
+              Create responsive, user-friendly web interfaces using HTML, CSS,
+              Tailwind, TypeScript, and React.js. My work focuses on optimizing
+              performance and ensuring seamless user experiences across devices.
             </p>
           </div>
         </div>
@@ -27,8 +28,10 @@ const Services = () => {
             <CodeBracketSquareIcon className="w-24 h-24 mx-auto text-[#d3fae8]" />
             <h1 className="text-xl md:text-3xl mt-6 mb-6">Backend</h1>
             <p className="text-[15px] text-[#d3d2d2] font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              sint, vero magni nemo veniam assumenda expedita ducimus.
+              Build scalable, secure, and efficient server-side applications
+              using Node.js, Express, MongoDB, and Firebase. I am experienced in
+              creating RESTful APIs, handling authentication, admin dashboards &
+              more.
             </p>
           </div>
         </div>
@@ -38,8 +41,10 @@ const Services = () => {
             <CodeBracketSquareIcon className="w-24 h-24 mx-auto text-[#d3fae8]" />
             <h1 className="text-xl md:text-3xl mt-6 mb-6">Fullstack</h1>
             <p className="text-[15px] text-[#d3d2d2] font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              sint, vero magni nemo veniam assumenda expedita ducimus.
+              Combine frontend and backend technologies to create end-to-end web
+              applications. I am skilled in both client-side and server-side
+              development, allowing me to build complete, dynamic, and
+              interactive web solutions.
             </p>
           </div>
         </div>
