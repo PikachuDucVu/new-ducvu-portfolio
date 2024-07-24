@@ -33,6 +33,8 @@ const HomePage = () => {
 
   return (
     <div className="" id="header">
+      <title>Duc Vu Portfolio</title>
+
       <div>
         {showNav && (
           <MiniMenuNavbar navState={showNav} closeNav={handleShowNav} />

@@ -9,7 +9,7 @@ const CareerTimeline = () => {
   return (
     <div className="pt-16 md:pt-32 pb-20 bg-[#09101a] " id="skills">
       <h1 className="heading">CAREER TIMELINE</h1>
-      <div className="w-full">
+      <div className="w-full overflow-x-hidden">
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
