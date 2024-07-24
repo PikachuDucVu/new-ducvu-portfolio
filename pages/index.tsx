@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import CareerTimeline from "@/components/CareerTimeline";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MiniMenuNavbar from "@/components/MiniMenuNavbar";
@@ -22,7 +23,8 @@ const HomePage = () => {
       <div className="relative z-[30]">
         <About />
         <Services />
-        <Skills />
+        {/* <Skills /> */}
+        <CareerTimeline />
         <Projects />
         <Footer />
       </div>
