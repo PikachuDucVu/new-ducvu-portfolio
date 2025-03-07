@@ -19,46 +19,33 @@ const Projects = () => {
         Pro<span className="text-yellow-400">ject</span>
       </h1>
       <div className="w-4/5 pt-8 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          className="flex flex-col transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-full h-[275px] md:h-[375px] gap-10"
-          onClick={() => {
-            openProjectLink("quiz");
-          }}
-        >
-          <p className="font-bold text-white text-2xl text-center ">QUIZ APP</p>
-          <Image
-            src="/images/quizScreen.png"
-            alt=""
-            layout="fill"
-            className="object-contain"
-          />
-        </div>
-        <div>
-          <div className="flex flex-col transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-full h-[275px] md:h-[375px] gap-10">
-            <p className="font-bold text-white text-2xl text-center">
-              Coming soon
+        {[
+          { title: "QUIZ APP", src: "/images/quizScreen.png", link: "quiz" },
+          { title: "Games Platform", src: "/images/games.png", link: "games" },
+          {
+            title: "Coming soon",
+            src: "/images/p3.jpg",
+            opacity: "opacity-40",
+          },
+        ].map(({ title, src, link, opacity }, index) => (
+          <div
+            key={index}
+            className="flex flex-col transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-full aspect-square"
+            onClick={link ? () => openProjectLink(link) : undefined}
+          >
+            <p className="font-bold text-white text-2xl text-center z-50">
+              {title}
             </p>
-            <Image
-              src="/images/p2.jpg"
-              alt=""
-              layout="fill"
-              className="opacity-40 object-contain"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src={src}
+                alt={title}
+                layout="fill"
+                className={`object-cover ${opacity || ""}`}
+              />
+            </div>
           </div>
-        </div>
-        <div>
-          <div className="flex flex-col transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-full h-[275px] md:h-[375px] gap-10">
-            <p className="font-bold text-white text-2xl text-center ">
-              Coming soon
-            </p>
-            <Image
-              src="/images/p3.jpg"
-              alt=""
-              layout="fill"
-              className="object-contain opacity-40"
-            />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
